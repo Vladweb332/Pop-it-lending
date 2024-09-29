@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Кодировка документа -->
+    <meta charset="UTF-8" />
+    <!-- Обеспечивает совместимость с Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Настройки для адаптивного дизайна -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Подключение CSS-стилей -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- Заголовок страницы -->
+    <title>Title</title>
+  </head>
+  <body>
+    <!-- Заголовок страницы -->
+    <header class="header">
+      <!-- Логотип -->
+      <div class="header__logo">НЕ_ПУПЫРКА.РУ</div>
+      <!-- Навигация -->
+      <nav class="header__navigation navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">О нас</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Скидки</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Блок содержимого -->
+    <div class="content-block">
+      <div class="content-block__block">
+        <h1 class="content-block__title">POP IT!</h1>
+        <p class="content-block__description">
+          Лучшая игрушка - антистресс - бесконечная<br />
+          пупырчатя пленка
+        </p>
+      </div>
+    </div>
+
+    <!-- Кнопка для покупки -->
+    <button class="content-block__btn btn">КУПИТЬ</button>
+
+    <!-- Заголовок для карточек продуктов -->
+    <h2 class="card-container__title">
+      <strong>Выберите свой Pop-it!</strong>
+    </h2>
+    <main class="card-container">
+      <!-- Карточка товара 1 -->
+      <div class="card">
+        <img
+          src="./images/square.png"
+          style="width: 150px; height: 150px"
+          alt="Image 1"
+          class="card__image"
+        />
+        <p class="card__description">Разноцветный квадратный</p>
+        <button class="card__buy-btn buy-btn">Купить</button>
+      </div>
+      <!-- Карточка товара 2 -->
+      <div class="card">
+        <img
+          src="./images/amongus.png"
+          style="width: 150px; height: 150px"
+          alt="Image 2"
+          class="card__image"
+        />
+        <p class="card__description">Among us, мраморный</p>
+        <button class="card__buy-btn buy-btn">Купить</button>
+      </div>
+      <!-- Карточка товара 3 -->
+      <div class="card">
+        <img
+          src="./images/round.png"
+          style="width: 150px; height: 150px"
+          alt="Image 3"
+          class="card__image"
+        />
+        <p class="card__description">Разноцветный круглый</p>
+        <button class="card__buy-btn buy-btn">Купить</button>
+      </div>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+      <div class="footer__content">
+        <!-- Логотип в футере -->
+        <p class="footer__logo">НЕ_ПУПЫРКА.РУ</p>
+        <!-- Список ссылок в футере -->
+        <ul class="footer__list">
+          <li class="footer__item">Способы оплаты</li>
+          <li class="footer__item">Доставка</li>
+          <li class="footer__item">Опт</li>
+          <li class="footer__item">Контакты</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

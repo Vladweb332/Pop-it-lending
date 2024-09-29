@@ -1,0 +1,367 @@
+/* Сброс стилей по умолчанию для всех элементов */
+* {
+  margin: 0; /* Убираем внешние отступы */
+  padding: 0; /* Убираем внутренние отступы */
+  box-sizing: border-box; /* Устанавливаем режим расчета размеров с учетом отступов и границ */
+}
+
+/* Общие стили для body */
+body {
+  font-family: sans-serif; /* Шрифт для всего документа */
+  background-image: url("./images/background.png"); /* Фоновое изображение */
+  background-size: 100vw 110vh; /* Размер фона */
+  background-position: center; /* Позиционирование фона по центру */
+  height: 90vh; /* Высота области просмотра */
+  background-repeat: no-repeat; /* Запрет на повторение фона */
+  background-color: rgba(105, 222, 222, 0.5); /* Цвет фона с прозрачностью */
+}
+
+/* Стили для заголовка */
+.header {
+  display: flex; /* Используем Flexbox для расположения элементов */
+  justify-content: space-between; /* Распределение элементов по краям */
+  align-items: center; /* Выравнивание по центру по вертикали */
+  padding: 20px; /* Внутренние отступы */
+  background-color: transparent; /* Прозрачный фон */
+  color: rgb(0, 0, 0); /* Цвет текста */
+  position: relative; /* Относительное позиционирование для последующих элементов */
+}
+
+/* Стили для логотипа в заголовке */
+.header__logo {
+  font-size: 1.5rem; /* Размер шрифта для логотипа */
+  font-weight: bold; /* Жирное начертание */
+}
+
+/* Стили для навигации в заголовке */
+.header__navigation {
+  display: flex; /* Используем Flexbox для навигации */
+}
+
+/* Стили для списка навигации */
+.navigation__list {
+  display: flex; /* Используем Flexbox для списка */
+  list-style: none; /* Убираем маркеры списка */
+}
+
+/* Стили для элементов списка навигации */
+.navigation__item {
+  margin-left: 100px; /* Отступ слева для элементов списка */
+}
+
+/* Стили для ссылок навигации */
+.navigation__link {
+  color: rgb(0, 0, 0); /* Цвет текста ссылки */
+  text-decoration: none; /* Убираем подчеркивание */
+  font-size: 1rem; /* Размер шрифта */
+  margin-left: 30px; /* Отступ слева для ссылок */
+}
+
+/* Эффект при наведении на ссылку навигации */
+.navigation__link:hover {
+  text-decoration: underline; /* Подчеркивание текста при наведении */
+}
+
+/* Стили для блока содержимого */
+.content-block {
+  display: flex; /* Используем Flexbox для содержимого */
+  color: #fff; /* Цвет текста */
+}
+
+/* Стили для внутреннего блока содержимого */
+.content-block__block {
+  text-align: start; /* Выравнивание текста по левому краю */
+  margin-top: 5rem; /* Отступ сверху */
+  margin-left: 10rem; /* Отступ слева */
+}
+
+/* Стили для заголовка блока содержимого */
+.content-block__title {
+  font-size: 100px; /* Размер шрифта заголовка */
+}
+
+/* Стили для описания блока содержимого */
+.content-block__description {
+  font-size: 17px; /* Размер шрифта описания */
+}
+
+/* Стили для контейнера карточек */
+.card-container {
+  display: flex; /* Используем Flexbox для карточек */
+  justify-content: center; /* Центрирование карточек */
+  margin-top: 1rem; /* Отступ сверху */
+}
+
+/* Стили для каждой карточки */
+.card {
+  border-radius: 10px; /* Скругление углов карточки */
+  margin: 0 30px; /* Отступы между карточками */
+  padding: 10px; /* Внутренний отступ карточки */
+  text-align: center; /* Центрирование текста в карточке */
+  margin-top: 5rem; /* Отступ сверху карточки */
+}
+
+/* Стили для изображения в карточке */
+.card__image {
+  width: 100%; /* Адаптивная ширина изображения */
+  height: auto; /* Автоматическая высота изображения */
+  border-radius: 10px; /* Скругление углов изображения */
+}
+
+/* Стили для описания карточки */
+.card__description {
+  margin-top: 10px; /* Отступ сверху для описания */
+  font-size: 14px; /* Размер шрифта для описания */
+}
+
+/* Стили для кнопок "Купить" в карточках */
+.card__buy-btn {
+  margin-top: 10px; /* Отступ сверху для кнопки */
+  padding: 8px 16px; /* Внутренние отступы для кнопки */
+  border: none; /* Без границы */
+  width: 100px; /* Ширина кнопки */
+  background-color: #d6ca58; /* Цвет фона кнопки */
+  color: rgb(0, 0, 0); /* Цвет текста кнопки */
+  cursor: pointer; /* Изменение курсора при наведении */
+  font-weight: bold; /* Жирное начертание текста */
+}
+
+/* Стили для кнопки в блоке содержимого */
+.content-block__btn {
+  display: flex; /* Используем Flexbox для кнопки */
+  margin-left: 10rem; /* Отступ слева */
+  width: 200px; /* Ширина кнопки */
+  padding-top: 1rem; /* Отступ сверху */
+  margin-top: 3rem; /* Отступ сверху */
+  padding-left: 5rem; /* Отступ слева */
+  height: 50px; /* Высота кнопки */
+  border: none; /* Без границы */
+  font-weight: 700; /* Жирное начертание текста */
+  background-color: rgba(255, 255, 255, 0.56); /* Цвет фона с прозрачностью */
+}
+
+/* Стили для заголовка контейнера карточек */
+.card-container__title {
+  text-align: center; /* Центрирование текста заголовка */
+  font-size: 22px; /* Размер шрифта заголовка */
+  margin-top: 25rem; /* Отступ сверху */
+  color: #333; /* Цвет текста заголовка */
+  height: 5px; /* Высота заголовка */
+  font-weight: bold; /* Жирное начертание текста */
+}
+
+/* Стили для футера */
+.footer {
+  background-color: #333; /* Цвет фона футера */
+  color: #fff; /* Цвет текста футера */
+  padding: 20px; /* Внутренний отступ футера */
+  text-align: center; /* Центрирование текста футера */
+  margin-top: 5rem; /* Отступ сверху футера */
+}
+
+/* Стили для содержимого футера */
+.footer__content {
+  max-width: 1400px; /* Максимальная ширина содержимого футера */
+  margin: 0 auto; /* Центрирование содержимого футера */
+  display: flex; /* Использование Flexbox для содержимого футера */
+  justify-content: space-between; /* Расположение элементов с равными промежутками */
+  align-items: center; /* Выравнивание элементов по центру */
+}
+
+/* Стили для списка футера */
+.footer__list {
+  list-style-type: none; /* Удаление маркеров списка */
+  padding: 0; /* Удаление отступов */
+  display: flex; /* Использование Flexbox для списка */
+  justify-content: space-around; /* Расположение элементов списка с равными промежутками */
+}
+
+/* Стили для элементов списка футера */
+.footer__item {
+  margin: 0 100px; /* Отступы между элементами списка футера */
+}
+
+/* Адаптация стилей для экранов от 320px до 768px */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Изменение направления на вертикальное */
+    padding: 10px; /* Уменьшение отступов */
+  }
+
+  .content-block__btn {
+    margin-left: 0.9rem; /* Убираем левый отступ для кнопки */
+  }
+
+  .navigation__list {
+    flex-direction: column; /* Вертикальное расположение элементов списка навигации */
+    align-items: center; /* Центрирование элементов */
+  }
+
+  .navigation__item {
+    margin-left: 0; /* Убираем левый отступ для элементов навигации */
+    margin-top: 10px; /* Отступ сверху для элементов навигации */
+  }
+
+  .content-block__block {
+    margin-left: 1rem; /* Уменьшаем левый отступ */
+    margin-right: 1rem; /* Уменьшаем правый отступ */
+  }
+  .content-block__title {
+    font-size: 5rem;
+  }
+  .card-container {
+    flex-direction: column; /* Вертикальное расположение карточек */
+    align-items: center; /* Центрирование карточек */
+  }
+
+  .card-container__title {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 15rem;
+    color: #333;
+    height: 5px;
+    font-weight: bold;
+  }
+
+  .card {
+    margin: 15px 0; /* Вертикальные отступы для карточек */
+    width: 90%; /* Ширина карточки */
+  }
+
+  .footer__content {
+    flex-direction: column; /* Вертикальное расположение элементов футера */
+    align-items: center; /* Центрирование элементов футера */
+  }
+
+  .footer__list {
+    flex-direction: column; /* Вертикальное расположение элементов списка футера */
+    align-items: center; /* Центрирование элементов списка футера */
+  }
+
+  .footer__item {
+    margin: 10px 0; /* Вертикальные отступы для элементов списка футера */
+  }
+}
+
+/* Адаптация стилей для экранов от 769px до 1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .navigation__list {
+    flex-direction: row; /* Горизонтальное расположение элементов списка навигации */
+    justify-content: center; /* Центрирование элементов списка */
+  }
+
+  .navigation__item {
+    margin-left: 50px; /* Отступ слева для элементов навигации */
+  }
+
+  .content-block__block {
+    margin-left: 4rem; /* Увеличиваем левый отступ */
+  }
+  .card-container {
+    flex-direction: row; /* Горизонтальное расположение карточек */
+    justify-content: center; /* Центрирование карточек */
+  }
+  .content-block__btn {
+    margin-left: 4rem;
+  }
+  .card {
+    margin: 15px; /* Отступы для карточек */
+    width: 45%; /* Ширина карточки */
+  }
+
+  .footer__content {
+    justify-content: space-around; /* Расположение элементов футера с равными промежутками */
+  }
+
+  .footer__list {
+    flex-direction: row; /* Горизонтальное расположение элементов списка футера */
+    justify-content: space-between; /* Расположение элементов списка с равными промежутками */
+  }
+
+  .footer__item {
+    margin: 0 20px; /* Горизонтальные отступы для элементов списка футера */
+  }
+}
+
+/* Адаптация стилей для экранов от 1025px до 1444px */
+@media screen and (min-width: 1025px) and (max-width: 1444px) {
+  .navigation__list {
+    flex-direction: row; /* Горизонтальное расположение элементов списка навигации */
+    justify-content: flex-start; /* Выравнивание по левому краю */
+  }
+
+  .navigation__item {
+    margin-left: 70px; /* Отступ слева для элементов навигации */
+  }
+
+  .content-block__block {
+    margin-left: 10rem; /* Увеличиваем левый отступ */
+  }
+
+  .card-container {
+    margin-top: 10rem; /* Увеличиваем верхний отступ для контейнера карточек */
+    justify-content: space-between; /* Расположение карточек с равными промежутками */
+  }
+
+  .card {
+    margin: 0 30px; /* Горизонтальные отступы для карточек */
+    width: 30%; /* Ширина карточки */
+  }
+  .card-container__title {
+    margin-top: 39rem;
+  }
+  .footer__content {
+    justify-content: space-between; /* Расположение элементов футера с равными промежутками */
+  }
+
+  .footer__list {
+    flex-direction: row; /* Горизонтальное расположение элементов списка футера */
+    justify-content: space-between; /* Расположение элементов списка с равными промежутками */
+  }
+
+  .footer__item {
+    margin: 0 80px; /* Горизонтальные отступы для элементов списка футера */
+  }
+}
+
+/* Адаптация стилей для экранов шириной до 320px */
+@media screen and (max-width: 320px) {
+  .content {
+    font-size: 1rem; /* Минимальный размер текста */
+    padding: 10px;
+  }
+
+  .content-block__image {
+    object-fit: cover; /* Изображение будет обрезаться для заполнения контейнера без искажения */
+    width: 100%; /* Полная ширина контейнера */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+  }
+
+  .content-block__block {
+    text-align: center; /* Центрирование текста и содержимого */
+    margin: 4rem auto; /* Автоматические отступы по горизонтали */
+  }
+
+  .content-block__title {
+    font-size: 40px; /* Уменьшаем заголовок */
+  }
+
+  .content-block__description {
+    font-size: 14px; /* Уменьшаем текст описания */
+  }
+
+  .content-block__btn {
+    margin: 1rem auto; /* Автоматические отступы по горизонтали */
+    width: 200px; /* Уменьшаем ширину кнопки */
+  }
+}
+
+/* Адаптация фонового изображения для маленьких устройств */
+@media screen and (max-width: 768px) {
+  body {
+    background-size: cover; /* Масштабируем изображение, чтобы оно заполнило экран */
+    background-position: center; /* Оставляем фоновое изображение по центру */
+  }
+}
+
+/* Адаптив для экранов шириной до 320px */
